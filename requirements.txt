@@ -1,5 +1,4 @@
 aiogram==3.26.0
-aiohttp-socks==0.11.0
 beautifulsoup4==4.12.3
 tortoise-orm==0.20.0
 python-dotenv==1.0.0

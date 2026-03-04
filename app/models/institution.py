@@ -14,5 +14,3 @@ class Institution(models.Model):
     class Meta:
         table = "institutions"
 
-
-UserPydantic = pydantic_model_creator(Institution, name="Institution")

@@ -30,5 +30,3 @@ class User(models.Model):
     def __str__(self):
         return f"{self.first_name} (ID: {self.telegram_id})"
 
-
-UserPydantic = pydantic_model_creator(User, name="User")
