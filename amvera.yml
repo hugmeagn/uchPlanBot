@@ -7,7 +7,7 @@ meta:
     version: 3.12
 build:
   requirementsPath: requirements.txt
-  useCache: true
+  useCache: false
 run:
   persistenceMount: /data
   scriptName: app/main.py
