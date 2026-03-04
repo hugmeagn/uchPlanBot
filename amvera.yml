@@ -4,10 +4,10 @@ meta:
     name: pip
     version: "3.12"
 build:
-  requirementsPath: /app/app/requirements.txt
+  requirementsPath: /app/requirements.txt
   useCache: true
 run:
-  scriptName: /app/app/main.py
+  scriptName: /app/main.py
   command: null
   persistenceMount: /data
   containerPort: "80"
