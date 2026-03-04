@@ -6,7 +6,7 @@ meta:
     name: pip
     version: 3.12
 build:
-  requirementsPath: app/requirements.txt
+  requirementsPath: requirements.txt
   useCache: true
 run:
   persistenceMount: /data
