@@ -18,17 +18,37 @@ logger = logging.getLogger(__name__)
 
 _parsers_cache = {}
 
+INSTITUTION_MAPPING = {
+    'Магнитогорский политехнический колледж': 'magpk',
+    'МПК': 'magpk',
+    'magpk': 'magpk',
+    'МГТУ им. Г.И. Носова': 'magtu',
+    'МГТУ': 'magtu',
+    'magtu': 'magtu',
+}
+
 
 def get_parser(institution_name: str, is_teacher: bool = False):
     """Получает парсер для учебного заведения"""
-    college_id = "magpk"
+    # Маппинг названий заведений на college_id
+    INSTITUTION_MAPPING = {
+        'Магнитогорский политехнический колледж': 'magpk',
+        'МПК': 'magpk',
+        'magpk': 'magpk',
+        'МГТУ им. Г.И. Носова': 'magtu',
+        'МГТУ': 'magtu',
+        'magtu': 'magtu',
+    }
+
+    college_id = INSTITUTION_MAPPING.get(institution_name, 'magpk')
+
     cache_key = f"{college_id}_{'teacher' if is_teacher else 'student'}"
 
     if cache_key not in _parsers_cache:
         _parsers_cache[cache_key] = ParserFactory.get_parser(college_id, teacher_mode=is_teacher)
+        logger.info(f"Created new parser for {cache_key}")
 
     return _parsers_cache[cache_key]
-
 
 def format_day_schedule(schedule: dict, title: str = "", is_teacher: bool = False) -> str:
     """Форматирует расписание на день"""

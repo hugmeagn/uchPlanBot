@@ -28,18 +28,19 @@ router = Router()
 # Словарь для кэширования парсеров (чтобы не создавать каждый раз)
 _parsers_cache = {}
 
+INSTITUTION_MAPPING = {
+    'Магнитогорский политехнический колледж': 'magpk',
+    'МПК': 'magpk',
+    'magpk': 'magpk',
+    'МГТУ им. Г.И. Носова': 'magtu',
+    'МГТУ': 'magtu',
+    'magtu': 'magtu',
+}
+
 
 def get_parser(institution_name: str, is_teacher: bool = False):
-    """
-    Получает парсер для учебного заведения.
-
-    Args:
-        institution_name: Название учебного заведения
-        is_teacher: True для преподавателя, False для студента
-    """
-    # TODO: Сделать маппинг institution_name -> college_id
-    # Пока для всех используем magpk
-    college_id = "magpk"
+    """Получает парсер для учебного заведения"""
+    college_id = INSTITUTION_MAPPING.get(institution_name, 'magpk')
 
     cache_key = f"{college_id}_{'teacher' if is_teacher else 'student'}"
 
