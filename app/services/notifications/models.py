@@ -10,6 +10,7 @@ from bot.utils import dates
 class NotificationChannel(str, Enum):
     """Каналы доставки уведомлений"""
     TELEGRAM = "telegram"
+    VK = "vk"
     EMAIL = "email"
     SMS = "sms"
     WEBHOOK = "webhook"

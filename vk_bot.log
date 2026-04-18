@@ -1,0 +1,127 @@
+2026-04-18 09:44:39,625 - app.vk_bot.main - INFO - 🚀 Инициализация VK бота...
+2026-04-18 09:44:39,668 - app.database.connection - INFO - ✅ База данных подключена: sqlite:///D:/Python/uchiPlan/app/database/db.sqlite3
+2026-04-18 09:44:39,668 - app.vk_bot.main - INFO - ✅ База данных подключена
+2026-04-18 09:44:40,261 - app.vk_bot.main - WARNING - Не удалось получить информацию о группе: 0
+2026-04-18 09:44:40,261 - app.vk_bot.main - INFO - ✅ VK API инициализирован (базовый режим)
+2026-04-18 09:44:40,691 - app.vk_bot.main - INFO - ✅ VK LongPoll настроен
+2026-04-18 09:44:40,691 - app.vk_bot.main - INFO - ✅ Диспетчер создан
+2026-04-18 09:44:40,693 - services.gigachat.client - INFO - GigaChat client initialized successfully
+2026-04-18 09:44:40,694 - services.notifications.scheduler - INFO - Task added: VK Morning Daily Planner (next run: 2026-04-19 08:00:00+05:00)
+2026-04-18 09:44:40,694 - services.notifications.scheduler - INFO - Scheduler started
+2026-04-18 09:44:40,694 - app.vk_bot.integration - INFO - VK morning planner scheduled for 08:00 daily
+2026-04-18 09:44:40,694 - app.vk_bot.integration - INFO - VK services initialized successfully
+2026-04-18 09:44:40,694 - app.vk_bot.main - INFO - ✅ Сервисы задач и уведомлений запущены
+2026-04-18 09:44:40,773 - app.vk_bot.dispatcher - INFO - Зарегистрировано 19 message handlers
+2026-04-18 09:44:40,773 - app.vk_bot.dispatcher - INFO - Зарегистрировано 63 callback handlers
+2026-04-18 09:44:40,773 - app.vk_bot.main - INFO - ✅ Хендлеры зарегистрированы
+2026-04-18 09:44:40,773 - app.vk_bot.main - INFO - 🎯 VK бот готов к работе!
+2026-04-18 09:44:40,773 - app.vk_bot.main - INFO - 🔄 Начинаем прослушивание событий LongPoll...
+2026-04-18 09:44:40,773 - services.notifications.service - WARNING - No backend for channel NotificationChannel.TELEGRAM
+2026-04-18 09:44:40,773 - services.notifications.service - WARNING - No backend for channel NotificationChannel.EMAIL
+2026-04-18 09:44:40,774 - services.notifications.service - WARNING - No backend for channel NotificationChannel.SMS
+2026-04-18 09:44:40,774 - services.notifications.service - WARNING - No backend for channel NotificationChannel.WEBHOOK
+2026-04-18 09:44:40,774 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:44:40,775 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:44:40.775801+05:00
+2026-04-18 09:44:40,777 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:45:10,781 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:45:10,781 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:45:10.781652+05:00
+2026-04-18 09:45:10,782 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:45:40,788 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:45:40,788 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:45:40.788577+05:00
+2026-04-18 09:45:40,789 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:46:02,208 - app.vk_bot.main - INFO - 🛑 Останавливаем VK бота...
+2026-04-18 09:46:02,209 - services.notifications.scheduler - INFO - Scheduler stopped
+2026-04-18 09:46:02,209 - app.vk_bot.integration - INFO - VK services cleaned up
+2026-04-18 09:46:02,209 - app.vk_bot.main - INFO - ✅ Сервисы остановлены
+2026-04-18 09:46:02,210 - app.database.connection - INFO - Соединения с БД закрыты
+2026-04-18 09:46:02,211 - app.vk_bot.main - INFO - ✅ Соединение с БД закрыто
+2026-04-18 09:46:02,211 - app.vk_bot.main - INFO - 👋 VK бот остановлен
+2026-04-18 09:46:07,842 - app.vk_bot.main - INFO - 🚀 Инициализация VK бота...
+2026-04-18 09:46:07,866 - app.database.connection - INFO - ✅ База данных подключена: sqlite:///D:/Python/uchiPlan/app/database/db.sqlite3
+2026-04-18 09:46:07,867 - app.vk_bot.main - INFO - ✅ База данных подключена
+2026-04-18 09:46:08,447 - app.vk_bot.main - WARNING - Не удалось получить информацию о группе: 0
+2026-04-18 09:46:08,447 - app.vk_bot.main - INFO - ✅ VK API инициализирован (базовый режим)
+2026-04-18 09:46:08,904 - app.vk_bot.main - INFO - ✅ VK LongPoll настроен
+2026-04-18 09:46:08,904 - app.vk_bot.main - INFO - ✅ Диспетчер создан
+2026-04-18 09:46:08,906 - services.gigachat.client - INFO - GigaChat client initialized successfully
+2026-04-18 09:46:08,906 - services.notifications.scheduler - INFO - Task added: VK Morning Daily Planner (next run: 2026-04-19 08:00:00+05:00)
+2026-04-18 09:46:08,907 - services.notifications.scheduler - INFO - Scheduler started
+2026-04-18 09:46:08,907 - app.vk_bot.integration - INFO - VK morning planner scheduled for 08:00 daily
+2026-04-18 09:46:08,907 - app.vk_bot.integration - INFO - VK services initialized successfully
+2026-04-18 09:46:08,907 - app.vk_bot.main - INFO - ✅ Сервисы задач и уведомлений запущены
+2026-04-18 09:46:08,934 - app.vk_bot.dispatcher - INFO - Зарегистрировано 19 message handlers
+2026-04-18 09:46:08,934 - app.vk_bot.dispatcher - INFO - Зарегистрировано 63 callback handlers
+2026-04-18 09:46:08,934 - app.vk_bot.main - INFO - ✅ Хендлеры зарегистрированы
+2026-04-18 09:46:08,934 - app.vk_bot.main - INFO - 🎯 VK бот готов к работе!
+2026-04-18 09:46:08,934 - app.vk_bot.main - INFO - 🔄 Начинаем прослушивание событий LongPoll...
+2026-04-18 09:46:08,934 - services.notifications.service - WARNING - No backend for channel NotificationChannel.TELEGRAM
+2026-04-18 09:46:08,934 - services.notifications.service - WARNING - No backend for channel NotificationChannel.EMAIL
+2026-04-18 09:46:08,934 - services.notifications.service - WARNING - No backend for channel NotificationChannel.SMS
+2026-04-18 09:46:08,934 - services.notifications.service - WARNING - No backend for channel NotificationChannel.WEBHOOK
+2026-04-18 09:46:08,935 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:46:08,935 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:46:08.935173+05:00
+2026-04-18 09:46:08,937 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:46:38,954 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:46:38,954 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:46:38.954181+05:00
+2026-04-18 09:46:38,954 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:47:08,980 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:47:08,980 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:47:08.980756+05:00
+2026-04-18 09:47:08,981 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:47:38,989 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:47:38,989 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:47:38.989371+05:00
+2026-04-18 09:47:38,990 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:48:08,999 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:48:08,999 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:48:08.999457+05:00
+2026-04-18 09:48:09,000 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:48:39,021 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:48:39,021 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:48:39.021485+05:00
+2026-04-18 09:48:39,021 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:48:39,257 - app.vk_bot.main - INFO - 🛑 Останавливаем VK бота...
+2026-04-18 09:48:39,257 - services.notifications.scheduler - INFO - Scheduler stopped
+2026-04-18 09:48:39,258 - app.vk_bot.integration - INFO - VK services cleaned up
+2026-04-18 09:48:39,258 - app.vk_bot.main - INFO - ✅ Сервисы остановлены
+2026-04-18 09:48:39,259 - app.database.connection - INFO - Соединения с БД закрыты
+2026-04-18 09:48:39,259 - app.vk_bot.main - INFO - ✅ Соединение с БД закрыто
+2026-04-18 09:48:39,260 - app.vk_bot.main - INFO - 👋 VK бот остановлен
+2026-04-18 09:48:45,791 - app.vk_bot.main - INFO - 🚀 Инициализация VK бота...
+2026-04-18 09:48:45,825 - app.database.connection - INFO - ✅ База данных подключена: sqlite:///D:/Python/uchiPlan/app/database/db.sqlite3
+2026-04-18 09:48:45,825 - app.vk_bot.main - INFO - ✅ База данных подключена
+2026-04-18 09:48:46,419 - app.vk_bot.main - WARNING - Не удалось получить информацию о группе: 0
+2026-04-18 09:48:46,419 - app.vk_bot.main - INFO - ✅ VK API инициализирован (базовый режим)
+2026-04-18 09:48:46,847 - app.vk_bot.main - INFO - ✅ VK LongPoll настроен
+2026-04-18 09:48:46,847 - app.vk_bot.main - INFO - ✅ Диспетчер создан
+2026-04-18 09:48:46,851 - services.gigachat.client - INFO - GigaChat client initialized successfully
+2026-04-18 09:48:46,851 - services.notifications.scheduler - INFO - Task added: VK Morning Daily Planner (next run: 2026-04-19 08:00:00+05:00)
+2026-04-18 09:48:46,851 - services.notifications.scheduler - INFO - Scheduler started
+2026-04-18 09:48:46,851 - app.vk_bot.integration - INFO - VK morning planner scheduled for 08:00 daily
+2026-04-18 09:48:46,851 - app.vk_bot.integration - INFO - VK services initialized successfully
+2026-04-18 09:48:46,851 - app.vk_bot.main - INFO - ✅ Сервисы задач и уведомлений запущены
+2026-04-18 09:48:46,876 - app.vk_bot.dispatcher - INFO - Зарегистрировано 19 message handlers
+2026-04-18 09:48:46,876 - app.vk_bot.dispatcher - INFO - Зарегистрировано 63 callback handlers
+2026-04-18 09:48:46,876 - app.vk_bot.main - INFO - ✅ Хендлеры зарегистрированы
+2026-04-18 09:48:46,876 - app.vk_bot.main - INFO - 🎯 VK бот готов к работе!
+2026-04-18 09:48:46,876 - app.vk_bot.main - INFO - 🔄 Начинаем прослушивание событий LongPoll...
+2026-04-18 09:48:46,877 - services.notifications.service - WARNING - No backend for channel NotificationChannel.TELEGRAM
+2026-04-18 09:48:46,877 - services.notifications.service - WARNING - No backend for channel NotificationChannel.EMAIL
+2026-04-18 09:48:46,877 - services.notifications.service - WARNING - No backend for channel NotificationChannel.SMS
+2026-04-18 09:48:46,877 - services.notifications.service - WARNING - No backend for channel NotificationChannel.WEBHOOK
+2026-04-18 09:48:46,878 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:48:46,878 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:48:46.878076+05:00
+2026-04-18 09:48:46,881 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:48:50,045 - app.vk_bot.dispatcher - INFO - Received event: 61
+2026-04-18 09:48:52,994 - app.vk_bot.dispatcher - INFO - Received event: 4
+2026-04-18 09:48:52,994 - app.vk_bot.dispatcher - INFO - Message text: /start
+2026-04-18 09:48:52,994 - app.vk_bot.dispatcher - INFO - From user: 482592817
+2026-04-18 09:49:16,885 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:49:16,885 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:49:16.885538+05:00
+2026-04-18 09:49:16,886 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:49:46,903 - services.tasks.service - INFO - Starting reminder processing cycle
+2026-04-18 09:49:46,904 - services.tasks.service - INFO - Current time (ekat): 2026-04-18 09:49:46.904713+05:00
+2026-04-18 09:49:46,904 - services.tasks.service - INFO - Reminder processing completed. Checked 0 tasks with reminders
+2026-04-18 09:49:48,215 - app.vk_bot.main - INFO - 🛑 Останавливаем VK бота...
+2026-04-18 09:49:48,216 - services.notifications.scheduler - INFO - Scheduler stopped
+2026-04-18 09:49:48,216 - app.vk_bot.integration - INFO - VK services cleaned up
+2026-04-18 09:49:48,216 - app.vk_bot.main - INFO - ✅ Сервисы остановлены
+2026-04-18 09:49:48,219 - app.database.connection - INFO - Соединения с БД закрыты
+2026-04-18 09:49:48,219 - app.vk_bot.main - INFO - ✅ Соединение с БД закрыто
+2026-04-18 09:49:48,219 - app.vk_bot.main - INFO - 👋 VK бот остановлен

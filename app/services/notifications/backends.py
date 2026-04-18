@@ -69,6 +69,44 @@ class TelegramBackend(NotificationBackend):
             raise NotificationBackendError(f"Telegram send failed: {e}")
 
 
+class VKBackend(NotificationBackend):
+    """
+    Бэкенд для VK (через сообщения группы)
+    """
+
+    def __init__(self, vk_api, config: Dict[str, Any] = None):
+        super().__init__(config)
+        self.vk_api = vk_api
+
+    async def send(self, notification: Notification) -> bool:
+        """
+        Отправляет уведомление через VK API
+        """
+        try:
+            # Форматируем сообщение
+            text = f"{notification.title}\n\n{notification.content}"
+
+            # Обрезаем длинное сообщение (лимит VK ~4000 символов)
+            if len(text) > 4000:
+                text = text[:3997] + "..."
+
+            # Отправляем в отдельном потоке (VK API синхронный)
+            import asyncio
+            result = await asyncio.to_thread(
+                self.vk_api.messages.send,
+                user_id=int(notification.user_id),  # VK ID пользователя
+                message=text,
+                random_id=0
+            )
+
+            logger.info(f"VK notification sent to user {notification.user_id}, result: {result}")
+            return True
+
+        except Exception as e:
+            logger.error(f"Failed to send VK notification: {e}")
+            raise NotificationBackendError(f"VK send failed: {e}")
+
+
 class ConsoleBackend(NotificationBackend):
     """Бэкенд для отладки - выводит в консоль"""
 

@@ -6,9 +6,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# VK BOT
+VK_TOKEN = os.getenv("VK_TOKEN")  # Токен сообщества VK
+VK_GROUP_ID = os.getenv("VK_GROUP_ID")  # ID группы
+# VK_API_VERSION = os.getenv("VK_API_VERSION", "5.199")
+
+# TELEGRAM BOT
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 DEFAULT_BOT_SETTINGS = DefaultBotProperties(parse_mode='Markdown')
-DB_URL = os.getenv("DB_URL", "sqlite://database/db.sqlite3")  # Для разработки SQLite
+DB_URL = os.getenv("DB_URL", "sqlite:///D:/Python/uchiPlan/app/database/db.sqlite3")  # Для разработки SQLite
 
 # Настройки парсеров
 REQUEST_TIMEOUT = 10

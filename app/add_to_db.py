@@ -22,7 +22,6 @@ async def main():
 
     for data in inst_data:
         inst, created = await Institution.get_or_create(
-            name=data["name"],
             defaults=data
         )
         if created:

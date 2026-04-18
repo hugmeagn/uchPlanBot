@@ -149,7 +149,7 @@ def create_institutions_keyboard(
     # Добавляем кнопки для каждого заведения
     for inst in institutions:
         # Обрезаем название, если слишком длинное
-        display_name = inst.name
+        display_name = str(inst)
         if len(display_name) > 40:
             display_name = display_name[:37] + "..."
 
