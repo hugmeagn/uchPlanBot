@@ -523,8 +523,8 @@ class TortoiseTaskRepository(TaskRepository):
 
     def _apply_filters_to_query(self, query, filters: TaskFilter):
         """Применяет фильтры к Tortoise запросу"""
-        if filters.status:
-            query = query.filter(status__in=filters.status)
+        # if filters.status:
+        #   query = query.filter(status__in=filters.status)
 
         if filters.priority:
             query = query.filter(priority__in=filters.priority)
